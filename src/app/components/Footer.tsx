@@ -20,6 +20,9 @@ function Footer() {
       <div className="space-y-5">
         <h1 className="text-[#868381] font-semibold">CONNECT</h1>
         <div className="flex flex-col">
+          <Link href="https://github.com/AbduSubhan11">
+            ↗<span className="hover:underline underline-offset-2">GitHub</span>
+          </Link>
           <Link href="/">
             ↗
             <span className="hover:underline underline-offset-2">Linkedin</span>
@@ -30,13 +33,8 @@ function Footer() {
               Instagram
             </span>
           </Link>
-          <Link href="/">
-            ↗
-            <span className="hover:underline underline-offset-2">Facebook</span>
-          </Link>
         </div>
       </div>
-      
     </footer>
   );
 }

@@ -6,16 +6,16 @@ import { usePathname } from "next/navigation";
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  const checkboxRef = useRef(null); 
+  const checkboxRef = useRef(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   const closeMenu = () => {
-    setMenuOpen(false); 
+    setMenuOpen(false);
     if (checkboxRef.current) {
-      checkboxRef.current.checked = false; 
+      checkboxRef.current.checked = false;
     }
   };
 
@@ -31,7 +31,7 @@ function NavBar() {
       >
         <Link
           href="/"
-          onClick={closeMenu} 
+          onClick={closeMenu}
           className={`hover:underline underline-offset-4 ${
             pathname === "/" ? "text-red-500 underline underline-offset-4" : ""
           }`}
@@ -40,7 +40,7 @@ function NavBar() {
         </Link>
         <Link
           href="/about"
-          onClick={closeMenu} 
+          onClick={closeMenu}
           className={`hover:underline underline-offset-4 ${
             pathname === "/about"
               ? "text-red-500 underline underline-offset-4"
@@ -51,7 +51,7 @@ function NavBar() {
         </Link>
         <Link
           href="/contact"
-          onClick={closeMenu} 
+          onClick={closeMenu}
           className={`hover:underline underline-offset-4 ${
             pathname === "/contact"
               ? "text-red-500 underline underline-offset-4"
@@ -111,6 +111,25 @@ function NavBar() {
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
             </svg>
           </Link>
+
+          {/* GITHUB ICON */}
+          <Link href="https://github.com/AbduSubhan11">
+            <svg
+              className="h-8 w-6 "
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              {" "}
+              <path stroke="none" d="M0 0h24v24H0z" />{" "}
+              <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
+            </svg>
+          </Link>
         </div>
 
         {/* NAV WORK BUTTON */}
@@ -130,7 +149,7 @@ function NavBar() {
       <label className="md:hidden">
         <div className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center">
           <input
-            ref={checkboxRef} 
+            ref={checkboxRef}
             className="hidden peer"
             type="checkbox"
             onClick={toggleMenu}
