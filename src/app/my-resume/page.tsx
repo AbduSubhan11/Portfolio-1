@@ -11,7 +11,7 @@ function page() {
         <p className="text-gray-600 mb-6">
           Welcome to my resume! I am a passionate and skilled frontend developer
           with hands-on experience in building responsive, user-friendly
-          websites and web applications. Whether it's bringing a creative design
+          websites and web applications. Whether it&apos;s bringing a creative design
           to life or optimizing the performance of a web project, I am dedicated
           to delivering high-quality solutions.
         </p>
