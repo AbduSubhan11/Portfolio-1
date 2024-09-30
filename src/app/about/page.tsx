@@ -1,7 +1,7 @@
 import Image from "next/image";
-import img1 from "../../../Images/img1.jpg";
-import img2 from "../../../Images/img2.jpg";
-import img3 from "../../../Images/img3.jpg";
+import img1 from "../../../public/Images/img1.jpg";
+import img2 from "../../../public/Images/img2.jpg";
+import img3 from "../../../public/Images/img3.jpg";
 import Skill from "../components/Skill";
 
 function Page() {

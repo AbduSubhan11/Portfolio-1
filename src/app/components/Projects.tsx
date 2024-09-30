@@ -1,8 +1,8 @@
 import Image from "next/image";
-import countryProject from "../../../Images/country.png";
-import expenseTracker from "../../../Images/expense.png";
-import staticResume from "../../../Images/static.png";
-import dynamicResume from "../../../Images/dynamic.png";
+import countryProject from "../../../public/Images/country.png";
+import expenseTracker from "../../../public/Images/expense.png";
+import staticResume from "../../../public/Images/static.png";
+import dynamicResume from "../../../public/Images/dynamic.png";
 import Link from "next/link";
 
 function Projects() {
