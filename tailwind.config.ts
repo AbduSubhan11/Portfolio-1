@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-300%)" },
+        },
+      },
+      animation: {
+        slide: "slide 20s linear infinite",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
