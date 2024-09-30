@@ -14,7 +14,7 @@ function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:px-16 px-5 ">
         <div className="">
           <Link
-            href="https://all-rest-countries-info.netlify.app"
+            href="/country-explorer"
             className="space-y-5"
           >
             <Image
@@ -28,7 +28,7 @@ function Projects() {
 
         <div>
           <Link
-            href="https://the-expense-tracker-pro.netlify.app"
+            href="/expense-tracker"
             className="space-y-7"
           >
             <Image
@@ -42,7 +42,7 @@ function Projects() {
 
         <div>
           <Link
-            href="https://subhan-static-resume.netlify.app"
+            href="/my-resume"
             className="space-y-7"
           >
             <Image
@@ -56,7 +56,7 @@ function Projects() {
 
         <div>
           <Link
-            href="https://subhan-dynamic-resume.netlify.app"
+            href="/dynamic-resume"
             className="space-y-7"
           >
             <Image
