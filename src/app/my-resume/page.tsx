@@ -35,12 +35,12 @@ function page() {
         </h3>
         <p className="text-gray-600 mb-4">
           I am available to work as a freelancer for frontend development
-          projects. If you’re looking to hire a talented and flexible developer
+          projects. If you&apos;re looking to hire a talented and flexible developer
           for your project, feel free to get in touch with me.
         </p>
 
         <p className="text-gray-600">
-          Let’s work together to bring your vision to life with modern, scalable
+          Let&apos;s work together to bring your vision to life with modern, scalable
           frontend technologies.
         </p>
 

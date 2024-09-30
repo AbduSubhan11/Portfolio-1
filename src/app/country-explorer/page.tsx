@@ -12,7 +12,7 @@ function page() {
         <p className="text-gray-600 mb-6">
           Explore the world with our interactive platform! Each country is
           represented by a card featuring the national flag. Simply click on a
-          country's card, and you'll be taken to a page that provides in-depth
+          country&apos;s card, and you&apos;ll be taken to a page that provides in-depth
           information about that country.
         </p>
 
@@ -20,14 +20,14 @@ function page() {
         <ul className="list-disc list-inside text-gray-600 mb-6">
           <li className="mb-2">
             <strong>Bordering Countries:</strong> See which countries share
-            borders with the one you're exploring.
+            borders with the one you&apos;re exploring.
           </li>
           <li className="mb-2">
             <strong>Capital:</strong> Discover the capital city and learn key
             facts about it.
           </li>
           <li className="mb-2">
-            <strong>Currencies:</strong> Get information about the country's
+            <strong>Currencies:</strong> Get information about the country&apos;s
             official currency, including its symbol and usage.
           </li>
           <li className="mb-2">
@@ -41,7 +41,7 @@ function page() {
         </ul>
 
         <p className="text-gray-600">
-          Whether you're planning to travel or just curious about different
+          Whether you&apos;re planning to travel or just curious about different
           countries, <strong>Country Explorer</strong> provides a fun and
           educational way to learn about the world!
         </p>
