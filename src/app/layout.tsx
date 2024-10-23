@@ -33,9 +33,6 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
-        <h1 className="text-center pb-10 text-[#202426]">
-          © SUBHAN ALL RIGHTS RESERVED
-        </h1>
       </body>
     </html>
   );
