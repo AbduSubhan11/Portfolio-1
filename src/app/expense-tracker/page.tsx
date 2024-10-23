@@ -1,5 +1,6 @@
 import Image from "next/image";
 import expense from "../../../public/Images/expense.png"
+import Link from "next/link";
 function Page() {
   return (
     <div>
@@ -51,12 +52,12 @@ function Page() {
           Keep your spending in check and stay organized with our easy-to-use
           expense tracker! For more details or to start tracking your expenses,
           visit the platform{" "}
-          <a
+          <Link
             href="https://the-expense-tracker-pro.netlify.app/"
             className="text-blue-500 hover:underline font-bold"
           >
             here
-          </a>
+          </Link>
           .
         </p>
       </div>

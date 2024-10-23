@@ -4,19 +4,16 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isHamburger, setIsHamburger] = useState(false);
   const pathname = usePathname();
   const checkboxRef = useRef(null);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+  const hamburHandler = () => {
+    setIsHamburger(!isHamburger);
   };
 
   const closeMenu = () => {
-    setMenuOpen(false);
-    if (checkboxRef.current) {
-      checkboxRef.current.checked = false;
-    }
+    setIsHamburger(false);
   };
 
   return (
@@ -24,7 +21,7 @@ function NavBar() {
       {/* NAV LINKS */}
       <div
         className={`md:space-x-6 font-serif font-bold text-xl ${
-          menuOpen
+          isHamburger
             ? "flex flex-col fixed right-0 top-0 h-screen w-52 px-16 py-28 space-y-5 border-2 bg-[#F4F4F4]"
             : "md:flex hidden"
         }`}
@@ -72,7 +69,7 @@ function NavBar() {
       {/* SOCIAL LINKS AND NAV BUTTON */}
       <div
         className={`justify-center items-center md:space-x-5 ${
-          menuOpen
+          isHamburger
             ? "flex flex-col fixed right-4 top-96 space-y-5"
             : "md:flex hidden"
         }`}
@@ -146,19 +143,28 @@ function NavBar() {
       </div>
 
       {/* HAMBURGER */}
-      <label className="md:hidden">
-        <div className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center">
-          <input
-            ref={checkboxRef}
-            className="hidden peer"
-            type="checkbox"
-            onClick={toggleMenu}
-          />
-          <div className="w-[50%] h-[2px] bg-[#202426] rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"></div>
-          <div className="w-[50%] h-[2px] bg-[#202426] rounded-md transition-all duration-300 origin-center peer-checked:hidden"></div>
-          <div className="w-[50%] h-[2px] bg-[#202426] rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"></div>
-        </div>
-      </label>
+      <div className="md:hidden z-20">
+        <button
+          className="flex flex-col justify-between w-6 h-[18px] focus:outline-none"
+          onClick={hamburHandler}
+        >
+          <span
+            className={`block h-[3px] w-full bg-black transition-transform duration-300 ease-in-out ${
+              isHamburger ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></span>
+          <span
+            className={`block h-[3px] w-full bg-black transition-opacity duration-300 ease-in-out ${
+              isHamburger ? "opacity-0" : ""
+            }`}
+          ></span>
+          <span
+            className={`block h-[3px] w-full bg-black transition-transform duration-300 ease-in-out ${
+              isHamburger ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
+        </button>
+      </div>
     </nav>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import dynamic from "../../../public/Images/dynamic.png";
 import Image from "next/image";
 
@@ -64,12 +65,12 @@ function page() {
 
         <div className="mt-6">
             visit platform
-          <a
+          <Link
             href="https://subhan-dynamic-resume.netlify.app/"
             className="text-blue-500 hover:underline font-bold"
           >
             Here
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -47,7 +47,7 @@ function page() {
         </p>
         <p className="text-gray-600">
           For more information, visit the platform{" "}
-          <Link href="https://all-rest-countries-info.netlify.app/" className   ="text-blue-700 font-bold hover:underline">
+          <Link href="https://all-rest-countries-info.netlify.app/" className="text-blue-700 font-bold hover:underline">
             here
           </Link>
           .
