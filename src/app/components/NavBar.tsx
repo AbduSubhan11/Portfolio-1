@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 function NavBar() {
   const [isHamburger, setIsHamburger] = useState(false);
   const pathname = usePathname();
-  const checkboxRef = useRef(null);
 
   const hamburHandler = () => {
     setIsHamburger(!isHamburger);
