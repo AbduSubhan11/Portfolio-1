@@ -16,18 +16,6 @@
   }
 }
 
-.heroDeveloper {
-  animation: heroDeveloper 2s ease-in-out;
-}
-@keyframes heroDeveloper {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .heorPara1 {
     animation: heorPara1 2s ease-in-out;
 }
