@@ -8,10 +8,10 @@ export default function Home() {
 
       {/* FRONT PART */}
       <div className="text-center space-y-5 md:py-12 py-10 ">
-        <h1 className="text-[#202426] font-bold md:text-[6vw] text-[15vw]">
+        <h1 className="heroFrontEnd text-[#202426] font-bold md:text-[6vw] text-[15vw]">
           Front-End <span className="text-[#FF5A13]">Developer.</span>
         </h1>
-        <p className="text-1xl md:px-80 px-10">
+        <p className="heorPara1 text-1xl md:px-80 px-10">
           Crafting beautiful, responsive websites that deliver seamless user
           experiences. Turning ideas into reality through code and design. I
           create responsive, interactive interfaces that engage users across all

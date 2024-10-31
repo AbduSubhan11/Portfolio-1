@@ -8,7 +8,7 @@ function Page() {
   return (
     <section className="space-y-20">
       <div className="w-full p-12 bg-[#202426]">
-        <h1 className="text-center text-white md:text-3xl font-semibold">
+        <h1 className="abouth1 text-center text-white md:text-3xl font-semibold">
           My name is Subhan, I’m a Frontend Developer. I create engaging,
           responsive websites and web applications, ensuring seamless user
           experiences across all devices.
