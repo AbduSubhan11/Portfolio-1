@@ -2,7 +2,7 @@ import Email from "../components/Email";
 function Page() {
   return (
     <section className="text-[#202426] md:py-20 py-10">
-      <h1 className="text-[#868381] text-center font-semibold md:pr-10">
+      <h1 className="text-[#868381] text-center font-semibold ">
         CONTACT
       </h1>
       <form
