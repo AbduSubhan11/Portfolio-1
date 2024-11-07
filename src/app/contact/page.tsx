@@ -5,9 +5,6 @@ function Page() {
       <h1 className="text-[#868381] text-center font-semibold md:pr-10">
         CONTACT
       </h1>
-      <div>
-        <div></div>
-      </div>
       <form
         action="https://api.web3forms.com/submit"
         method="POST"
