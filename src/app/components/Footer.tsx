@@ -11,6 +11,12 @@ function Footer() {
             <Link href="/" className="hover:underline underline-offset-2">
               Work
             </Link>
+            <Link href="/about" className="hover:underline underline-offset-2">
+              About
+            </Link>
+            <Link href="/services" className="hover:underline underline-offset-2">
+              Services
+            </Link>
             <Link
               href="/contact"
               className="hover:underline underline-offset-2"

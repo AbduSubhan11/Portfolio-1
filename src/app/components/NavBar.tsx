@@ -46,6 +46,17 @@ function NavBar() {
           About
         </Link>
         <Link
+          href="/services"
+          onClick={closeMenu}
+          className={`hover:underline underline-offset-4 ${
+            pathname === "/services"
+              ? "text-red-500 underline underline-offset-4"
+              : ""
+          }`}
+        >
+          Services
+        </Link>
+        <Link
           href="/contact"
           onClick={closeMenu}
           className={`hover:underline underline-offset-4 ${
