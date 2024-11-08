@@ -52,7 +52,7 @@ function page() {
             target="_blank"
             className="text-blue-700 font-bold hover:underline"
           >
-            here
+            Here
           </Link>
           .
         </p>
