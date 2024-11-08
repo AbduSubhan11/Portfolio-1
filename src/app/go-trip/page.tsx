@@ -28,20 +28,20 @@ function page() {
         </h2>
         <ul className="list-disc list-inside text-gray-600 mb-6">
           <li className="mb-2">
-            Top Destinations: Discover hand-picked travel spots tailored to your
-            interests.
+            <strong>Top Destinations:</strong> Discover hand-picked travel spots
+            tailored to your interests.
           </li>
           <li className="mb-2">
-            Seamless Bookings: Enjoy quick and secure booking options with a
-            user-friendly interface.
+            <strong>Seamless Bookings:</strong> Enjoy quick and secure booking
+            options with a user-friendly interface.
           </li>
           <li className="mb-2">
-            Travel Insights: Get destination highlights, must-visit places, and
-            local tips.
+            <strong>Travel Insights:</strong> Get destination highlights,
+            must-visit places, and local tips.
           </li>
           <li className="mb-2">
-            24/7 Customer Support: Reach us anytime for assistance on your
-            journey.
+            <strong>24/7 Customer Support:</strong> Reach us anytime for
+            assistance on your journey.
           </li>
         </ul>
 
@@ -50,9 +50,9 @@ function page() {
           ideal destinations. Our mission is to make travel planning as
           enjoyable and straightforward as the trip itself. Have questions or
           need help with your booking? Our team is here to assist you. Reach out
-          via our Contact page, and we&apos;ll make sure you’re ready for your next
-          adventure! Start your journey with Go Trip and explore the beauty of
-          travel!
+          via our Contact page, and we&apos;ll make sure you’re ready for your
+          next adventure! Start your journey with Go Trip and explore the beauty
+          of travel!
         </p>
 
         <div>
