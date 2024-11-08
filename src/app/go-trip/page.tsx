@@ -48,16 +48,11 @@ function page() {
         <p className="text-gray-600">
           At Go Trip, we are passionate about connecting travelers with their
           ideal destinations. Our mission is to make travel planning as
-          enjoyable and straightforward as the trip itself.
-        </p>
-        <p className="text-gray-600 ">
-          Have questions or need help with your booking? Our team is here to
-          assist you. Reach out via our Contact page, and we'll make sure you’re
-          ready for your next adventure!
-        </p>
-
-        <p className="text-gray-600">
-          Start your journey with Go Trip and explore the beauty of travel!
+          enjoyable and straightforward as the trip itself. Have questions or
+          need help with your booking? Our team is here to assist you. Reach out
+          via our Contact page, and we&apos;ll make sure you’re ready for your next
+          adventure! Start your journey with Go Trip and explore the beauty of
+          travel!
         </p>
 
         <div>
