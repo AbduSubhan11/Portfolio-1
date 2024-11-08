@@ -1,5 +1,5 @@
 import Image from "next/image";
-import expense from "../../../public/Images/expense.png"
+import expense from "../../../public/Images/expense.png";
 import Link from "next/link";
 function Page() {
   return (
@@ -54,6 +54,7 @@ function Page() {
           visit the platform{" "}
           <Link
             href="https://the-expense-tracker-pro.netlify.app/"
+            target="_blank"
             className="text-blue-500 hover:underline font-bold"
           >
             here

@@ -4,6 +4,7 @@ import expenseTracker from "../../../public/Images/expense.png";
 import staticResume from "../../../public/Images/static.png";
 import dynamicResume from "../../../public/Images/dynamic.png";
 import ecommerce from "../../../public/Images/e-commerce.png";
+import goTrip from "../../../public/Images/go-trip.png";
 import Link from "next/link";
 
 function Projects() {
@@ -43,6 +44,17 @@ function Projects() {
               className="shadow-2xl shadow-gray-400 hover:scale-105 transition-all duration-500"
             />
             <h1 className="text-2xl font-serif">The Expense Tracker</h1>
+          </Link>
+        </div>
+
+        <div>
+          <Link href="/go-trip" className="space-y-7">
+            <Image
+              src={goTrip}
+              alt="Go-Trip"
+              className="shadow-2xl shadow-gray-400 hover:scale-105 transition-all duration-500"
+            />
+            <h1 className="text-2xl font-serif">The Trip Booking Web</h1>
           </Link>
         </div>
 

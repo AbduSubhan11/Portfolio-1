@@ -5,7 +5,11 @@ import Image from "next/image";
 function page() {
   return (
     <div>
-      <Image src={dynamic} alt="dynamic-resume" className="md:p-20 p-8 "></Image>
+      <Image
+        src={dynamic}
+        alt="dynamic-resume"
+        className="md:p-20 p-8 "
+      ></Image>
       <div className="p-5">
         <h1 className="text-3xl font-bold text-gray-800 mb-4">
           Dynamic Resume Builder
@@ -64,9 +68,10 @@ function page() {
         </p>
 
         <div className="mt-6">
-            visit platform
+          visit platform
           <Link
             href="https://subhan-dynamic-resume.netlify.app/"
+            target="_blank"
             className="text-blue-500 hover:underline font-bold"
           >
             Here

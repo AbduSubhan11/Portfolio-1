@@ -56,10 +56,11 @@ function Page() {
         </h3>
         <p className="text-gray-600 mb-4">
           Keep your spending in check and stay organized with our easy-to-use
-          E-commerce plateform! For more details or to start shopping with Capital.Shop,
-          visit the platform{" "}
+          E-commerce plateform! For more details or to start shopping with
+          Capital.Shop, visit the platform{" "}
           <Link
             href="https://the-capitalshop.netlify.app/"
+            target="_blank"
             className="text-blue-500 hover:underline font-bold"
           >
             here

@@ -47,6 +47,7 @@ function page() {
         <div className="mt-6">
           Visit the platform {""}
           <a
+            target="_blank"
             href="https://subhan-static-resume.netlify.app/"
             className="text-blue-500 hover:underline font-bold"
           >
