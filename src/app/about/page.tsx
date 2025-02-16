@@ -1,37 +1,58 @@
+"use client";
 import Image from "next/image";
 import img1 from "../../../public/Images/img1.jpg";
 import img2 from "../../../public/Images/Img2.jpg";
 import img3 from "../../../public/Images/img3.jpg";
 import Skill from "../components/Skill";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function Page() {
+  const tl = gsap.timeline();
+  useGSAP(() => {
+    tl.from(".Imagecontainer .Image", {
+      z: -900,
+      duration: 0.5,
+      opacity: 0,
+      stagger: {
+        from:"edges",
+        amount:0.5
+      },
+    });
+  });
   return (
     <section className="space-y-20">
       <div className="w-full p-12 bg-[#202426]">
         <h1 className="abouth1 text-center text-white md:text-3xl font-semibold">
-          My name is Subhan, I’m a Frontend Developer. I create engaging,
+          My name is Abdu Subhan, I’m a Frontend Developer. I create engaging,
           responsive websites and web applications, ensuring seamless user
           experiences across all devices.
         </h1>
       </div>
 
       {/* 3 PICS AND TEXT */}
-      <div className="space-y-10">
-        <div className="flex justify-center items-center relative md:gap-x-36 gap-x-24">
+      <div className="space-y-10 flex flex-col items-center justify-center">
+        <div className="Imagecontainer flex justify-center items-center relative md:gap-x-36 gap-x-24">
           <Image
             src={img1}
             alt="img1"
-            className="md:w-40 w-20 md:h-36 h-20 rounded-[50%]"
+            quality={100}
+            priority
+            className="Image md:w-40 w-20 md:h-36 h-20 rounded-[50%]"
           />
           <Image
             src={img2}
             alt="img2"
-            className="md:w-56 w-36 md:h-56 h-36 absolute rounded-[50%]"
+            quality={100}
+            priority
+            className="Image md:w-56 w-36 md:h-56 h-36 absolute z-50 rounded-[50%]"
           />
           <Image
             src={img3}
             alt="img3"
-            className="md:w-40 w-20 md:h-36 h-20 rounded-[50%]"
+            quality={100}
+            priority
+            className="Image md:w-40 w-20 md:h-36 h-20 rounded-[50%]"
           />
         </div>
         <div className="md:px-80 px-5 text-[#202426] text-center space-y-5">

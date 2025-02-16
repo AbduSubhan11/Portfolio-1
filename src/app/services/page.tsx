@@ -24,7 +24,7 @@ function page() {
       {/* CARD CONTAINER */}
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 sm:p-10 p-5">
         {/* CARD 1 */}
-        <div className=" shadow-lg relative group">
+        <div className=" shadow-lg relative group ">
           <div className="w-full h-full flex justify-center items-center bg-gray-300 opacity-0 absolute group-hover:opacity-90 transition-opacity duration-500">
             <Link
               href={"/contact"}
@@ -34,7 +34,7 @@ function page() {
               Let&apos;s Talk
             </Link>
           </div>
-          <div className="sm:p-8 p-5 space-y-3">
+          <div className="sm:p-8 p-5 space-y-3 ">
             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-orange-100">
               <svg
                 className="h-8 w-8 text-[#FF5A13]"

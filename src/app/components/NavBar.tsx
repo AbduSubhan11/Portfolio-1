@@ -1,11 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function NavBar() {
   const [isHamburger, setIsHamburger] = useState(false);
   const pathname = usePathname();
+  const tabLinks = useRef(null);
+  const NavHeading = useRef(null);
+  const SocialLinks = useRef(null);
 
   const hamburHandler = () => {
     setIsHamburger(!isHamburger);
@@ -15,10 +20,24 @@ function NavBar() {
     setIsHamburger(false);
   };
 
+  useGSAP(() => {
+    const tl = gsap.timeline();
+    tl.from([tabLinks.current, NavHeading.current, SocialLinks.current], {
+      y: -400,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        from:"center",
+        amount:0.5,
+      },
+    });
+  });
+
   return (
     <nav className="flex justify-between items-center max-w-full z-20 md:p-8 p-5 sticky top-0 border-b-2 text-[#202426] bg-[#F4F4F4]">
       {/* NAV LINKS */}
       <div
+        ref={tabLinks}
         className={`md:space-x-6 font-serif font-bold text-xl ${
           isHamburger
             ? "flex flex-col fixed right-0 top-0 h-screen w-52 px-16 py-28 space-y-5 border-2 bg-[#F4F4F4]"
@@ -70,7 +89,7 @@ function NavBar() {
       </div>
 
       {/* NAV CENTER HEADING */}
-      <div>
+      <div ref={NavHeading}>
         <h1 className="font-bold font-sans md:text-5xl text-3xl">
           Subhan<span className="text-[#FF5A13]">.</span>
         </h1>
@@ -78,6 +97,7 @@ function NavBar() {
 
       {/* SOCIAL LINKS AND NAV BUTTON */}
       <div
+        ref={SocialLinks}
         className={`justify-center items-center md:space-x-5 ${
           isHamburger
             ? "flex flex-col fixed right-4 top-96 space-y-5"

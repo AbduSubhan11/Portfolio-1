@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.heroFrontEnd {
-  animation: heroText 1s ease-in;
-}
-@keyframes heroText {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
 
 .heorPara1 {
     animation: heorPara1 2s ease-in-out;
@@ -30,5 +17,9 @@
 
 .abouth1{
     animation: heorPara1 2s ease-in-out;
+}
+
+.Imagecontainer {
+  perspective: 1000px;
 }
 
