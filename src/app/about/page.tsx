@@ -10,7 +10,7 @@ import gsap from "gsap";
 function Page() {
   const tl = gsap.timeline();
   useGSAP(() => {
-    tl.from(".Imagecontainer .Image", {
+    tl.from(".AboutImagecontainer .Image", {
       z: -900,
       duration: 0.5,
       opacity: 0,
@@ -32,7 +32,7 @@ function Page() {
 
       {/* 3 PICS AND TEXT */}
       <div className="space-y-10 flex flex-col items-center justify-center">
-        <div className="Imagecontainer flex justify-center items-center relative md:gap-x-36 gap-x-24">
+        <div className="AboutImagecontainer flex justify-center items-center relative md:gap-x-36 gap-x-24">
           <Image
             src={img1}
             alt="img1"

@@ -38,10 +38,10 @@ function NavBar() {
       {/* NAV LINKS */}
       <div
         ref={tabLinks}
-        className={`md:space-x-6 font-serif font-bold text-xl ${
+        className={`lg:space-x-6 font-serif font-bold text-xl ${
           isHamburger
             ? "flex flex-col fixed right-0 top-0 h-screen w-52 px-16 py-28 space-y-5 border-2 bg-[#F4F4F4]"
-            : "md:flex hidden"
+            : "lg:flex hidden"
         }`}
       >
         <Link
@@ -101,7 +101,7 @@ function NavBar() {
         className={`justify-center items-center md:space-x-5 ${
           isHamburger
             ? "flex flex-col fixed right-4 top-96 space-y-5"
-            : "md:flex hidden"
+            : "lg:flex hidden"
         }`}
       >
         {/* SOCIAL LINKS */}
@@ -162,8 +162,8 @@ function NavBar() {
         {/* NAV WORK BUTTON */}
         <Link
           href="/contact"
-          onClick={closeMenu} // Close menu on click
-          className="relative inline-block md:px-6 px-3 py-2 font- text-white border-2 border-black group bg-[#202426] overflow-hidden rounded-3xl"
+          onClick={closeMenu} 
+          className="relative inline-block md:px-6 px-3 py-2 text-white border-2 border-black group bg-[#202426] overflow-hidden rounded-3xl"
         >
           <span className="relative z-10 transition-colors duration-300 group-hover:text-[#202426]">
             Let&apos;s Work Together
@@ -173,7 +173,7 @@ function NavBar() {
       </div>
 
       {/* HAMBURGER */}
-      <div className="md:hidden z-20">
+      <div className="lg:hidden z-20">
         <button
           className="flex flex-col justify-between w-6 h-[18px] focus:outline-none"
           onClick={hamburHandler}
