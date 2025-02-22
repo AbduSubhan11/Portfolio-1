@@ -6,7 +6,7 @@ function page() {
     <div className="space-y-20">
       <div className="w-full p-12 bg-[#202426]">
         <h1 className="text-center text-white lg:text-[25px] font-semibold">
-          As a frontend developer, my focus is on creating seamless, responsive,
+          As a creative developer, my focus is on creating seamless, responsive,
           and visually engaging web experiences. Here are some of the key
           services I offer to help businesses create powerful and engaging
           digital presences.

@@ -40,15 +40,19 @@ function HeroSection() {
       <div className="text-center space-y-5 md:py-12 py-10 ">
         <div className="text-center space-y-5 md:py-12 py-10">
           <div className="heroFrontEndText text-[#202426] font-bold md:text-[6vw] text-[15vw]">
-            <span>F</span>
+            <span>C</span>
             <span>r</span>
-            <span>o</span>
-            <span>n</span>
+            <span>e</span>
+            <span>a</span>
             <span>t</span>
-            <span>-</span>
-            <span>E</span>
-            <span>n</span>
-            <span>d</span>
+            <span>i</span>
+            <span>v</span>
+            <span>e</span>
+            <span> </span>
+            <span>W</span>
+            <span>e</span>
+            <span>b</span>
+            <span> </span>
             <span className="text-[#FF5A13]">D</span>
             <span className="text-[#FF5A13]">e</span>
             <span className="text-[#FF5A13]">v</span>

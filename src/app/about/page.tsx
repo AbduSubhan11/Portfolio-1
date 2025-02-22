@@ -15,8 +15,8 @@ function Page() {
       duration: 0.5,
       opacity: 0,
       stagger: {
-        from:"edges",
-        amount:0.5
+        from: "edges",
+        amount: 0.5,
       },
     });
   });
@@ -24,9 +24,9 @@ function Page() {
     <section className="space-y-20">
       <div className="w-full p-12 bg-[#202426]">
         <h1 className="abouth1 text-center text-white md:text-3xl font-semibold">
-          My name is Abdu Subhan, I’m a Frontend Developer. I create engaging,
-          responsive websites and web applications, ensuring seamless user
-          experiences across all devices.
+          My name is Abdu Subhan, I’m a Creative Web Developer. I create
+          engaging, responsive websites and web applications, ensuring seamless
+          user experiences across all devices.
         </h1>
       </div>
 
@@ -61,8 +61,9 @@ function Page() {
             dynamic, and responsive user interfaces that deliver seamless
             digital experiences. With a deep understanding of modern web
             technologies, including HTML, CSS, Tailwind, TypeScript, JavaScript,
-            and frameworks like React and Next.js, I bring designs to life with
-            clean, efficient, and maintainable code.
+            GSAP, Threejs, Framer Motion, Python, and frameworks like React and
+            Next.js, I bring designs to life with clean, efficient, and
+            maintainable code.
           </h1>
           <p className="text-1xl">
             I am adept at creating dynamic, visually appealing interfaces,

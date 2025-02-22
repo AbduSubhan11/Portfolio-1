@@ -24,7 +24,7 @@ function Skill() {
         <h1 className="text-[#B9B2AE]">MY SKILLS</h1>
           <div ref={skills} className="text-3xl text-white font-bold whitespace-nowrap animate-pulse">
             → Html &nbsp;→ Css &nbsp;→ Tailwind &nbsp;→ JavaScript &nbsp;→
-            TypeScript &nbsp;→ React.js &nbsp;→ Next.js &nbsp;→ GSAP 
+            TypeScript &nbsp;→ React.js &nbsp;→ Next.js &nbsp;→ GSAP &nbsp;→ Threejs &nbsp;→ Framer Motion
           </div>
       </div>
     </>
