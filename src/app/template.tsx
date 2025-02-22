@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
 
-function template({ children }: { children: React.ReactNode }) {
+function Template({ children }: { children: React.ReactNode }) {
   useGSAP(() => {
     const tl = gsap.timeline();
     tl.fromTo(
@@ -35,4 +35,4 @@ function template({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default template;
+export default Template;
