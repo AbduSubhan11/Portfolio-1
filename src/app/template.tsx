@@ -18,7 +18,7 @@ function template({ children }: { children: React.ReactNode }) {
         duration: 1,
         opacity: 0,
         stagger: {
-          amount: 0.2,
+          amount: 0.5,
         },
         ease: "power2.inOut",
       }
